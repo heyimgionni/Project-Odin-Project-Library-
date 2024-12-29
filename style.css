@@ -1,0 +1,124 @@
+*,
+*::before,*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+html {font-size: 62.5%;}
+body{overflow-x: hidden;font-size: 1.6rem;position: relative;height: 100dvh;}
+.wrapper,.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.none {display: none;}
+
+.overlap {
+    background: rgba(0,0,0,0.23);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* navabr */
+
+.navbar {
+    height: 10dvh;
+    box-shadow: 0px 13px 17px -3px rgba(0,0,0,0.17);
+}
+
+.navbar > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.navbar > .container > .btn {
+    border: 1px solid #000;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* modal */
+
+.modal {
+    border: 1px solid black;
+    background: rgba(0,0,0,.5);
+    height: 55dvh;
+    width: 30dvw;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+    gap: 5rem;
+}
+
+.modal > form > input[type="text"],
+.modal > form > input[type="number"] {
+    width: 70%;
+    padding: 1.25rem;
+}
+
+.modal > form > .btn {
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+/* card and wrapper */
+
+.wrapper {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column; 
+    width: 40dvh;
+    height: 50dvh;
+}
+
+.card-title{
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 2rem;
+    gap: 4rem;
+}
+
+.card-body p {
+    font-size: 2rem;
+}

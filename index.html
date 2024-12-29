@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body class="">
+    
+    <nav class="navbar">
+        <div class="container">
+            <h2>GenLibrary</h2>
+            <button class="btn btn-plus">+</button>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        
+    </div>
+
+    <div class="modal none">
+        <form class="form">
+            <input type="text" placeholder="Title" class="title-book" required>
+            <input type="text" placeholder="Genre" class="genre-book" required>
+            <input type="number" placeholder="Pages" class="pages" required min="1">
+            <div class="checkbox">
+                <label for="read">Did you read it?</label>
+                <input type="checkbox" id="read">
+            </div>
+            <button class="btn btn-add">Add</button>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
